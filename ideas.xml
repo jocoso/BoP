@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<dialogue>
+    <conversation id="0" root="Hello World">
+
+        <option 
+            summary="Accept" 
+            response="Hiiiiiiii"
+        >
+            <action name="GOTO" id="1"/>
+        </option>
+
+        <option 
+            condition="BRAVERY" 
+            lvl="3"
+            summary="Reject"
+            response="Psycho!"
+        >
+            <action name="END"/>
+        </option>
+
+    </conversation>
+
+    <conversation id="1" root="How are you?">
+        <option 
+            summary="Fine"
+            response="I am good, thanks for asking"
+        >
+            <action name="END"/>
+        </option>
+
+        <option
+            summary="Okay"
+            response="Can't complain"
+        >
+            <action name="END"/>
+        </option>
+
+        <option
+            summary="Bad"
+            response="Please Kill Me"
+        >
+            <action name="END"/>
+        </option>
+
+    </conversation>
+</dialogue>
